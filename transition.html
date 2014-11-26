@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- http://www.w3schools.com/css/css3_transitions.asp -->
+<html>
+    <head>
+        <title>Transition</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style> 
+            div {
+                width: 100px;
+                height: 100px;
+                background: red;
+                transition: width 2s, height 2s, transform 2s;
+            }
+
+            div:hover {
+                width: 200px;
+                height: 200px;
+                transform: rotate(180deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div>Passe o mouse</div>
+    </body>
+</html>
