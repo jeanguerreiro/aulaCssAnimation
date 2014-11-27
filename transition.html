@@ -7,16 +7,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style> 
             div {
+                margin-left: 560px;
                 width: 100px;
                 height: 100px;
-                background: red;
-                transition: width 2s, height 2s, transform 2s;
+                background:red;
+                transition: width 2s,
+                    height 2s,
+                    transform 2s,
+                    background-color 2s;
             }
-
             div:hover {
+                background-color:blueviolet;
                 width: 200px;
                 height: 200px;
-                transform: rotate(180deg);
+                transform: rotate(360deg);
             }
         </style>
     </head>
