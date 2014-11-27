@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--http://www.justinaguilar.com/-->
+<html>
+    <head>
+        <link rel="stylesheet" href="css/animations.css">
+        <title>Biblioteca Animation.css</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #brazuca{
+                background-image: url('img/brazuca.jpg');
+                width: 100px; height: 100px;
+                margin: 0 auto;
+                position: absolute;
+                visibility: hidden;
+                top: 100px;
+                left: 50%;
+
+            }
+            section{
+                background-color: white;
+                height: 300px;
+                position: relative;
+            }
+            body{
+                background-color: lightblue;
+
+            }
+        </style>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    </head>
+
+    <body>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section>
+            <div id="brazuca"></div>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <script>
+            $(window).scroll(function () {
+                $('#brazuca').each(function () {
+                    var imagePos = $(this).offset().top;
+
+                    var topOfWindow = $(window).scrollTop();
+                    if (imagePos < topOfWindow + 400) {
+                        $(this).addClass("slideExpandUp");
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
